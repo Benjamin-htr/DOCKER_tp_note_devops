@@ -5,7 +5,7 @@ services:
     platform: linux/x86_64
     image: ghcr.io/benjamin-htr/tp_final_front:latest
     ports:
-      - "8000:80"
+      - "8014:80"
     depends_on:
       - back
 
@@ -13,4 +13,4 @@ services:
     platform: linux/x86_64
     image: ghcr.io/benjamin-htr/tp_final_back:latest
     ports:
-      - "3000:3000"
+      - "3014:3000"
