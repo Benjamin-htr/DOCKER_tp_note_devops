@@ -1,15 +1,16 @@
-version: '3'
+version: "3"
 
 services:
   front:
-    image: 
-      ghcr.io/benjamin-htr/tp_final_front:latest
+    platform: linux/x86_64
+    image: ghcr.io/benjamin-htr/tp_final_front:latest
     ports:
-      - "3000:3000"
+      - "8000:80"
     depends_on:
       - back
 
   back:
-    image : ghcr.io/benjamin-htr/tp_final_back:latest
+    platform: linux/x86_64
+    image: ghcr.io/benjamin-htr/tp_final_back:latest
     ports:
-      - "8080:80"
+      - "3000:3000"
