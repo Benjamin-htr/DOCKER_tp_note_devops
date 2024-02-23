@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  front:
+    image: 
+      ghcr.io/benjamin-htr/tp_final_front:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - back
+
+  back:
+    image : ghcr.io/benjamin-htr/tp_final_back:latest
+    ports:
+      - "8080:80"
